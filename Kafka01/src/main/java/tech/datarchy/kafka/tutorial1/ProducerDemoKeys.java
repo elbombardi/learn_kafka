@@ -27,7 +27,7 @@ public class ProducerDemoKeys {
             // Create a record
             final String topic = "first_topic";
             final String value = "value " + i;
-            final String key = "key " + (i % 3);
+            final String key = "key " + (i);
             ProducerRecord<String, String> record = new ProducerRecord<String, String>(topic, key, value);
 
             // Send record

@@ -31,7 +31,6 @@ public class ProducerDemoWithCallback {
             producer.send(record, new Callback() {
                 public void onCompletion(RecordMetadata recordMetadata, Exception e) {
                     // executes every time a record is successful or an exception is throw
-
                     if (e == null) {
                         // the record was successfully send
                         logger.info("Received new metadata. \n" +
